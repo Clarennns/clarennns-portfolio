@@ -444,14 +444,48 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  /* Optionnel : tu peux lui donner une couleur différente ou un aspect bouton */
   color: var(--text-main);
   font-weight: 700;
 }
 
-/* Assure-toi que l'icône GitHub n'est pas déformée */
+/* Assure-toi que l'icône GitHub n'est pas deéformée */
 .nav-links a img {
   width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+/* --- SECTION E4 & TABLEAU (CORRIGÉ POUR AFFICHAGE EN COLONNE ET FOND GRIS) --- */
+#e4-section .about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu horizontalement */
+  text-align: left;
+}
+
+#e4-section .e4-description {
+  display: flex;
+  flex-direction: column; /* Force l'affichage des paragraphes de haut en bas */
+  gap: 20px; /* Ajoute de l'espace entre chaque paragraphe */
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Cadre gris réduit (15px) et vertical pour le tableau */
+#e4-section .about-container div.tableau-synthese,
+.tableau-synthese div {
+  background: var(--secondary) !important; /* Gris identique à la veille */
+  padding: 15px !important; /* Taille de fond demandée */
+  border-radius: 12px !important;
+  width: fit-content; /* Le cadre s'adapte pile à l'image */
+  margin: 0 auto; /* Centre le bloc sur la page */
+  display: flex;
+  justify-content: center;
+}
+
+#e4-section .about-container div img,
+.tableau-synthese div img {
+  max-width: 45% !important; /* Réduit la largeur pour un aspect vertical élancé */
+  height: auto;
+  display: block;
 }
