@@ -16,13 +16,24 @@
         <span class="brand-name">Clarens Ali</span>
       </div>
       <div class="nav-links">
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#veille">Veille</a>
+        <a href="#about" style="font-size: 0.95rem">Outils maîtrisés</a>
+        <a href="#projects" style="font-size: 0.95rem">Mes Projets</a>
+        <a href="#veille" style="font-size: 0.95rem">Veille Technologique 📊</a>
+        <a href="#e4-section" style="font-size: 0.95rem">Épreuve E4</a>
+        <a href="#reports-title" style="font-size: 0.95rem"
+          >Mes rapports de stage</a
+        >
+        <a href="#cv-title" style="font-size: 0.95rem">Mon CV</a>
+        <a href="#contact" style="font-size: 0.95rem">Contact</a>
         <a
           href="https://github.com/Clarennns"
           target="_blank"
-          style="display: flex; align-items: center; gap: 5px"
+          style="
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.95rem;
+          "
         >
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
@@ -36,31 +47,48 @@
 
     <main>
       <section class="hero">
-        <h1>Développeur Web Passionné</h1>
+        <h1>À propos de moi</h1>
         <p class="subtext">
-          Actuellement étudiant en BTS SIO option SLAM au Lycée Turgot, je vous
-          invite à découvrir sur ce portfolio un aperçu de mon parcours
-          académique et professionnel. Vous y trouverez mon CV ainsi qu'une
-          présentation des différents projets que j'ai réalisés au cours de mes
-          formations.
+          Actuellement étudiant en deuxième année de BTS Services Informatiques
+          aux Organisations (SIO), option SLAM (Solutions Logicielles et
+          Applications Métier) au Lycée Turgot, je me passionne pour la
+          conception logicielle et le développement "Fullstack".
+        </p>
+
+        <p class="subtext">
+          À travers ce portfolio, je vous invite à découvrir mon parcours
+          académique et professionnel, marqué par une évolution significative.
+          Ma première expérience chez Powerlab m'a permis de maîtriser les bases
+          du support technique, du diagnostic matériel et de la relation client.
+          Cette année, mon stage chez Syslearn m'a permis de franchir une étape
+          décisive en m'immergeant dans le développement d'applications
+          modernes.
+        </p>
+
+        <p class="subtext">
+          J'ai notamment travaillé sur le projet Deeelroom, où j'ai pu mettre en
+          pratique mes compétences en TypeScript, Next.js et en gestion de bases
+          de données NoSQL avec MongoDB Atlas. De la création de routes API
+          sécurisées à l'automatisation de la veille technologique via des flux
+          RSS, j'ai appris à répondre à des besoins métier complexes avec
+          rigueur et autonomie.
+        </p>
+
+        <p class="subtext">
+          Vous trouverez ici mon CV détaillé ainsi qu'une présentation des
+          projets techniques qui illustrent ma capacité à concevoir des
+          solutions innovantes et performantes.
         </p>
       </section>
 
       <section id="about" class="about-section">
         <div class="about-container">
           <div class="about-text">
-            <h2>À propos de moi</h2>
+            <h2>Outils maîtrisés</h2>
             <p class="intro-p">
-              Étudiant en BTS SIO 2ème année option SLAM, je me passionne pour
-              le développement web et les technologies modernes.
+              Voici les outils que je maîtrise et utilise régulièrement dans mes
+              projets de développement web :
             </p>
-            <div class="bio-details">
-              <p>
-                Actuellement en formation, je me spécialise dans la création
-                d'interfaces utilisateur intuitives et performantes, en
-                combinant front-end et back-end.
-              </p>
-            </div>
 
             <div class="skills-container">
               <div class="skill-card">
@@ -380,7 +408,10 @@
               text-align: left;
             "
           >
-            <h2 style="min-width: 200px; margin: 0; font-size: 1.6rem">
+            <h2
+              id="reports-title"
+              style="min-width: 200px; margin: 0; font-size: 1.6rem"
+            >
               Mes rapports de stage :
             </h2>
             <div
@@ -400,6 +431,7 @@
                   text-decoration: none;
                   color: inherit;
                   background: #fff;
+                  cursor: pointer;
                 "
               >
                 <img
@@ -423,10 +455,11 @@
                   text-decoration: none;
                   color: inherit;
                   background: #fff;
+                  cursor: pointer;
                 "
               >
                 <img
-                  src="./pdf/Rapport de stage Ali Clarens.jpg"
+                  src="./pdf/Rapport de stage Ali Clarens 2eme année.png"
                   alt="Aperçu Rapport"
                   class="preview"
                   style="width: 50px; border-radius: 4px"
@@ -445,7 +478,10 @@
               text-align: left;
             "
           >
-            <h2 style="min-width: 200px; margin: 0; font-size: 1.6rem">
+            <h2
+              id="cv-title"
+              style="min-width: 200px; margin: 0; font-size: 1.6rem"
+            >
               Mon CV :
             </h2>
             <div class="cv-grid" style="display: flex">
@@ -462,6 +498,7 @@
                   text-decoration: none;
                   color: inherit;
                   background: #fff;
+                  cursor: pointer;
                 "
               >
                 <img
@@ -473,6 +510,53 @@
                 <span class="icon">📄</span> Télécharger mon CV
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="about-section" style="background: #f9f9f9">
+        <div
+          class="about-container"
+          style="
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+          "
+        >
+          <h2 style="margin-bottom: 20px">Contact</h2>
+          <p
+            style="
+              color: var(--text-dim);
+              margin-bottom: 30px;
+              font-size: 1.1rem;
+            "
+          >
+            Vous souhaitez discuter d'un projet ou en savoir plus sur mon
+            parcours ? N'hésitez pas à me contacter !
+          </p>
+          <div style="display: inline-block">
+            <a
+              href="mailto:deeelroom@gmail.com"
+              class="cv-button"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                text-decoration: none;
+                background: var(--accent);
+                color: white;
+                border-radius: 50px;
+                transition: transform 0.3s ease;
+              "
+              onmouseover="this.style.transform = 'scale(1.05)'"
+              onmouseout="this.style.transform = 'scale(1)'"
+            >
+              <span style="font-size: 1.5rem">✉️</span>
+              clarensalipro@gmail.com
+            </a>
           </div>
         </div>
       </section>

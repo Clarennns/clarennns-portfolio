@@ -80,6 +80,12 @@ h1 {
   padding: 60px 4%;
 }
 
+/* MODIFICATION ICI : Taille divisée par 2 pour "À propos de moi" */
+#about h2 {
+  font-size: 1.2rem; /* Réduit pour être 2x plus petit que la normale */
+  margin-bottom: 20px;
+}
+
 .intro-p {
   font-size: 1.3rem;
   color: var(--accent);

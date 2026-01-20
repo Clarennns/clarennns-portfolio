@@ -14,7 +14,7 @@ function openModal(type) {
     pdfSrc = "./pdf/Rapport de stage Ali Clarens.pdf";
     downloadHref = "./pdf/Rapport de stage Ali Clarens.pdf";
   } else if (type === "stage2") {
-    pdfSrc = "./pdf/Rapport de stage Ali Clarens.pdf";
+    pdfSrc = "./pdf/Rapport de stage Ali Clarens 2eme année.pdf";
     downloadHref = "./pdf/Rapport de stage Ali Clarens.pdf";
   }
 
