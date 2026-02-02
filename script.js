@@ -38,3 +38,14 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+// Function to download the synthesis sheet
+function downloadSynthesis() {
+  const synthesisImage = document.getElementById("synthesisImage");
+  const link = document.createElement("a");
+  link.href = synthesisImage.src;
+  link.download = "Ma-Fiche-de-Synthese-E5.png";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}

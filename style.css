@@ -316,6 +316,17 @@ h1 {
   font-size: 0.8rem;
   margin-top: 15px;
   display: inline-block;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.source-tag:hover {
+  background-color: var(--accent);
+  color: white;
+  text-decoration: underline;
 }
 
 footer {
@@ -497,4 +508,70 @@ nav {
   display: block;
   border: none !important;
   background: transparent !important;
+}
+
+/* --- SECTION MON PARCOURS --- */
+.parcours-section {
+  text-align: center; /* Centre le texte "Mon Parcours" */
+  padding: 80px 4%;
+  background-color: #fff;
+}
+
+.parcours-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.parcours-col h3 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.experience-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid var(--accent); /* La barre bleue à gauche de l'image */
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(10px);
+}
+
+.experience-card .date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.experience-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--text-main);
+}
+
+.experience-card p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 900px) {
+  .parcours-grid {
+    grid-template-columns: 1fr;
+  }
 }
